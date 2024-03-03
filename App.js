@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Props from "./src/components/Props";
 import Counter from "./src/components/Counter";
 import FlexTry from "./src/components/FlexTry";
+import CustomCard from "./src/components/CustomCard";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
 
     // <Props name="Sadık"/>
     // <Counter number={23} />
-    <FlexTry/>
+    // <FlexTry/>
+    <CustomCard title='Eddard Stark' text='Winter is coming...'/>
   );
 }
 
