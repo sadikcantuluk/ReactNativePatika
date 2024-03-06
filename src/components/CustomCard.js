@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   View,
   SafeAreaView,
+  Alert,
 } from "react-native";
 import React from "react";
 
@@ -15,7 +16,7 @@ const CustomCard = (props) => {
           <Text style={styles.card_body_title}>{props.title}</Text>
           <Text style={styles.card_body_text}>{props.text}</Text>
         </View>
-        <TouchableOpacity style={styles.card_button}>
+        <TouchableOpacity style={styles.card_button} onPress={()=>{Alert.alert('Merhaba '+props.title)}}>
           <Text style={styles.card_button_text}>I LIKED</Text>
         </TouchableOpacity>
       </View>
@@ -59,5 +60,8 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
   },
-  card_button_text: {},
+  card_button_text: {
+    color:'white',
+    fontSize:15
+  },
 });

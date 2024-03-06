@@ -4,6 +4,9 @@ import Props from "./src/components/Props";
 import Counter from "./src/components/Counter";
 import FlexTry from "./src/components/FlexTry";
 import CustomCard from "./src/components/CustomCard";
+import { SafeAreaView } from "react-native-web";
+import CafeStateExample from "./src/components/CafeStateExample";
+import Lifecycle from "./src/components/Lifecycle";
 
 export default function App() {
   return (
@@ -15,7 +18,8 @@ export default function App() {
     // <Props name="Sadık"/>
     // <Counter number={23} />
     // <FlexTry/>
-    <CustomCard title='Eddard Stark' text='Winter is coming...'/>
+    // <CustomCard title="Eddard Stark" text="Winter is coming..." />
+    <Lifecycle/>
   );
 }
 
