@@ -7,6 +7,7 @@ import CustomCard from "./src/components/CustomCard";
 import { SafeAreaView } from "react-native-web";
 import CafeStateExample from "./src/components/CafeStateExample";
 import Lifecycle from "./src/components/Lifecycle";
+import LifeCycleCleanUp from "./src/components/LifeCycleCleanUp";
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ export default function App() {
     // <Counter number={23} />
     // <FlexTry/>
     // <CustomCard title="Eddard Stark" text="Winter is coming..." />
-    <Lifecycle/>
+    <LifeCycleCleanUp/>
   );
 }
 

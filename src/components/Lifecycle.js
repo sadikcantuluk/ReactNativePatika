@@ -4,6 +4,7 @@ import { Button } from "react-native";
 
 const Lifecycle = () => {
   const [number, setNumber] = useState(0);
+  
   //useEffect state değişikliklerini renderlarını yakalar.
   //En önemli özelliği state değerinin anlık güncel değerini bize veriri.
   //Bunu normal setState yapısı veremez. Buna Declarative State Yapısı denir.
