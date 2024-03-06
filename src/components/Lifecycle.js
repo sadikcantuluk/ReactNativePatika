@@ -11,6 +11,11 @@ const Lifecycle = () => {
     console.log("number state render edildi " + number);
   }, [number]);
 
+  //Herhangi bir state takibi vermediğim zaman ilk renderda birkez çalışır bir daha çalışmaz.
+  useEffect(() => {
+    console.log("Mount");
+  }, []);
+
   const handleButton = () => {
     console.log("1. State value " + number);
     setNumber(number + 1); //setNumber emretmez sadece iletir.
