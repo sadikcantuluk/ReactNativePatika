@@ -26,9 +26,9 @@ const Hello = () => {
     console.log("Merhaba Dünya");
 
     return () => {
-      console.log("Gidiyorum Dünya");
-    };
-  }, []);
+      console.log("Gidiyorum Dünya"); //return fonksiyonu Component ortadan kaldırıldığında 
+    };                                //ne yapılacağını söyler. Buna useEffect()'in Clean Up 
+  }, []);                             //özelliği denir.
 
   return <View>
     <Text>Hello I'm Hello Component</Text>
