@@ -7,10 +7,10 @@ import MusicCard from "./MusicCard";
 import SearchBar from "./SearchBar";
 
 const MusicApp = () => {
+  
   const [searchList, setSearchList] = useState(music_data);
-
   const renderItems = ({ item }) => <MusicCard song={item} />;
-
+  
   const handleChangeText = (text) => {
     const filteredList = music_data.filter((song) => {
       const searchText = text.toLowerCase();

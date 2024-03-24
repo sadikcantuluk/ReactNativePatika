@@ -14,19 +14,14 @@ import Books from "./src/components/books/Books";
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <Text>Open up App.js to start working on your app!</Text>
-    //   <StatusBar style="auto" />
-    // </View>
-
-    // <Props name="Sadık"/>
+    <Props name="Mustafa Kemal Atatürk"/>
     // <Counter number={23} />
     // <FlexTry/>
     // <CustomCard title="Eddard Stark" text="Winter is coming..." />
     // <LifeCycleCleanUp/>
     // <LoginScreen/>
     // <MusicApp/>
-    <Books/>
+    // <Books/>
   );
 }
 

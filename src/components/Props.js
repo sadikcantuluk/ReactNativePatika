@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { ScrollView } from 'react-native-web'
+import { ScrollView } from 'react-native'
 
 const Props = (props) => {
   return (
@@ -13,3 +13,5 @@ const Props = (props) => {
 export default Props
 
 const styles = StyleSheet.create({})
+
+

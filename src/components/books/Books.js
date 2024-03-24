@@ -6,9 +6,10 @@ import { ScrollView } from "react-native";
 
 const Books = () => {
   const [book, setBook] = useState("");
-  const [bookList, setBookList] = useState([]);
   const [readdedBookList, setreaddedBookList] = useState([]);
-
+  
+  const [bookList, setBookList] = useState([]);
+  
   const handlePress = () => {
     setBookList([...bookList, book]);
   };
