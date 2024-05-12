@@ -5,13 +5,15 @@ import { store } from "./src/redux/store";
 import FirstScreen from "./src/redux/FirstScreen";
 import SecondScreen from "./src/redux/SecondScreen";
 import UserList from "./src/redux/UserList";
+import Home from "./src/redux/TextInputApp/Home";
 
 export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView style={styles.container}>
-        <FirstScreen/>
-        <SecondScreen/>
+        {/* <FirstScreen/>
+        <SecondScreen/> */}
+        <Home/>
       </SafeAreaView>
     </Provider>
   );
