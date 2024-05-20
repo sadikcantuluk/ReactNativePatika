@@ -1,10 +1,31 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import { auth } from "@/firebase";
 import { useNavigation } from "expo-router";
+import axios from "axios";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
+
+  async function getCategory() {
+    const response = await axios.get("http://localhost:5136/api/Category");
+    console.log(response.data);
+  }
+
+  useEffect(() => {
+    // fetch("http://localhost:5150/api/Room", {
+    //   method: "GET",
+    //   headers: {
+    //     "Access-Control-Allow-Origin": "*",
+    //     "Access-Control-Allow-Headers": "*",
+    //     // Diğer başlıklar
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => console.log(data))
+    //   .catch((error) => console.error(error));
+    getCategory();
+  }, []);
 
   const handloLogOut = () => {
     auth
