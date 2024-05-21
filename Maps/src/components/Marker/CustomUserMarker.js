@@ -2,9 +2,9 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import MapView, { Marker } from "react-native-maps";
 
-export default function CustomUserMarker({ coordinate, imageUrl }) {
+export default function CustomUserMarker({ coordinate, imageUrl, onSelect }) {
   return (
-    <Marker coordinate={coordinate}>
+    <Marker coordinate={coordinate} onPress={onSelect}>
       <View style={styles.container}>
         <Image style={styles.image} source={{ uri: imageUrl }} />
       </View>
